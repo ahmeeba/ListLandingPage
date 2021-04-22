@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+    
+</head>
+
+<!-- Body Code -->
+<!-- Generate lists, delete buttons, and check boxes as the user needs-->
+<body>
+    
+    <header>
+        <h2>Daily Task List</h2>
+    </header>
+
+    <!--Time, Focus, Greeting Code-->
+    <time id="time"></time>
+    <h3>
+        <span id="greeting">Good Evening</span>
+       <!-- <span id="name" contenteditable="true">Tommy</span>-->
+    </h3>
+
+    <!--Time, Focus, Greeting Code END-->
+
+    <!--To do List Code-->
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">Enter</button>
+        <div class="select"><!--filter div-->
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Todo</option>
+            </select>
+        </div>
+    </form>
+    
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+
+    <!--To do List Code END-->
+    
+    <script src="./app.js">
+
+    </script>
+</body>
+</html>
